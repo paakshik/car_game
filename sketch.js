@@ -170,7 +170,7 @@ if (World.frameCount % 200 === 0){
             button2.visible = 1;
            
            
-
+backs.stop();
            gameState = "END";
            }
            
@@ -251,7 +251,7 @@ if (livG.isTouching(surfer)){
             surfer.rotation = 270;
             carG.destroyEach();
             coinG.destroyEach();
-
+backs.play();
 
             lives = 3;
             score = 0;
