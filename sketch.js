@@ -81,7 +81,7 @@ if (!localStorage["HS"]){
 if (!localStorage["HT"]){
     localStorage["HT"] = 0;  
 }
-backs.play();
+
         backs.setVolume(0.5);
 livG = new Group();
 }
@@ -102,7 +102,7 @@ gameState = "PLAY";
     }
 
     if (gameState === "PLAY"){
-        
+        backs.play();
         imageMode(CENTER);
       image(bo,200,y,400,800);
       y = y+ 10;
