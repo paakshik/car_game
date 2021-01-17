@@ -168,7 +168,7 @@ if (World.frameCount % 200 === 0){
             button2.visible = 1;
            
            
-backs.stop();
+
            gameState = "END";
            }
            
