@@ -23,10 +23,8 @@ function preload(){
     plan2 = loadImage("download (9).png");
     plan3 = loadImage("download (10).png");
     heart = loadImage("image.png");
-    backs = loadSound("fire_funk_proud_music_preview.mp3");
-    hit = loadSound("n.mp3");
     
-    coin = loadSound("coin.mp3");
+    
 }
 function setup(){
 createCanvas(400,400);
@@ -102,7 +100,7 @@ gameState = "PLAY";
     }
 
     if (gameState === "PLAY"){
-        backs.play();
+       
         imageMode(CENTER);
       image(bo,200,y,400,800);
       y = y+ 10;
@@ -160,7 +158,8 @@ if (World.frameCount % 200 === 0){
 }
         if (carG.isTouching(surfer)){
             lives = lives - 1;
-           hit.play();
+          
+            
             if (lives > 0){
                 carG.destroyEach();
             }
@@ -179,7 +178,8 @@ backs.stop();
     if (coinG.isTouching(surfer)){
         coinG.destroyEach();
         score = score + 1;
-        coin.play();
+        coin
+       ();
     }
     fill("forestGreen");
 textFont("Helvetica");
@@ -251,7 +251,7 @@ if (livG.isTouching(surfer)){
             surfer.rotation = 270;
             carG.destroyEach();
             coinG.destroyEach();
-backs.play();
+
 
             lives = 3;
             score = 0;
