@@ -177,8 +177,7 @@ backs.stop();
     if (coinG.isTouching(surfer)){
         coinG.destroyEach();
         score = score + 1;
-        coin
-       ();
+        
     }
     fill("forestGreen");
 textFont("Helvetica");
