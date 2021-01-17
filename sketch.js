@@ -80,7 +80,6 @@ if (!localStorage["HT"]){
     localStorage["HT"] = 0;  
 }
 
-        backs.setVolume(0.5);
 livG = new Group();
 }
 function draw(){
